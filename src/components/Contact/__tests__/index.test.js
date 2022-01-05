@@ -16,11 +16,13 @@ describe('Contact component', () => {
     });
 })
 
+//data-testid attribute for the <h1> tag in the ContactForm component matches the text content to be "Contact me"
 it('renders', () => {
     const { getByTestId } = render(<Contact />)
     expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
 })
 
+//data-testid attribute to locate the <button>, to match the text content "Submit".
 it('renders', () => {
     const { getByTestId } = render(<Contact />)
     expect(getByTestId('button')).toHaveTextContent('Submit')
